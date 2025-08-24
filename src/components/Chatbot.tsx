@@ -131,24 +131,6 @@ Réponds de manière professionnelle, précise et bienveillante. Utilise tes con
     }
   };
 
-  const quickReplies = [
-    {
-      question: "Quels services proposez-vous ?",
-      answer: "BANI propose plusieurs services :\n• Études techniques en génie civil et rural\n• Évaluations environnementales stratégiques\n• Études d'impact environnemental et social\n• Audits environnementaux\n• Conseil et expertise"
-    },
-    {
-      question: "Comment obtenir un devis ?",
-      answer: "Pour obtenir un devis, vous pouvez :\n• Nous contacter par email : info@bani-ci.net\n• Nous appeler au +225 27 23 48 52 01\n• Utiliser notre formulaire de contact sur le site\n\nNous vous fournirons un devis personnalisé dans les meilleurs délais."
-    },
-    {
-      question: "Êtes-vous certifiés/agréés ?",
-      answer: "Oui, BANI dispose de plusieurs certifications :\n• Agréé CHA.N.I.E depuis mai 2014\n• Agréé ANDE pour les études environnementales\n• Certifié ISO 9001:2015\n\nCes agréments garantissent la qualité de nos services."
-    },
-    {
-      question: "Comment vous contacter ?",
-      answer: "Vous pouvez nous contacter :\n• Email : info@bani-ci.net\n• Téléphone : +225 27 23 48 52 01\n• Via WhatsApp en cliquant sur le bouton vert\n• Depuis notre formulaire de contact"
-    }
-  ];
 
   const addMessage = (text: string, isBot: boolean = false) => {
     const newMessage: Message = {
@@ -160,12 +142,6 @@ Réponds de manière professionnelle, précise et bienveillante. Utilise tes con
     setMessages(prev => [...prev, newMessage]);
   };
 
-  const handleQuickReply = (reply: typeof quickReplies[0]) => {
-    addMessage(reply.question, false);
-    setTimeout(() => {
-      addMessage(reply.answer, true);
-    }, 500);
-  };
 
   const handleWhatsAppTransfer = () => {
     const phoneNumber = '+2250767156496';
@@ -270,20 +246,7 @@ Réponds de manière professionnelle, précise et bienveillante. Utilise tes con
               </div>
               
               {/* Quick Actions */}
-              <div className="mt-3 space-y-2">
-                <div className="flex flex-wrap gap-2">
-                  {quickReplies.slice(0, 2).map((reply, index) => (
-                    <Button
-                      key={index}
-                      variant="outline"
-                      size="sm"
-                      className="text-xs h-auto py-1 px-2"
-                      onClick={() => handleQuickReply(reply)}
-                    >
-                      {reply.question}
-                    </Button>
-                  ))}
-                </div>
+              <div className="mt-3">
                 <Button
                   onClick={handleWhatsAppTransfer}
                   className="w-full bg-[#25D366] hover:bg-[#20B858] text-white"
