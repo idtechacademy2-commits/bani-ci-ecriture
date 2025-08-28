@@ -97,7 +97,13 @@ Réponds de manière professionnelle, précise et bienveillante. Utilise tes con
       });
 
       if (!response.ok) {
-        throw new Error('Erreur API OpenAI');
+        const errorData = await response.json();
+        if (response.status === 429) {
+          addMessage("⚠️ Votre quota API OpenAI est dépassé. Veuillez vérifier votre plan de facturation sur OpenAI ou renouveler votre quota. En attendant, n'hésitez pas à nous contacter directement via WhatsApp.", true);
+          toast.error("Quota API dépassé");
+          return;
+        }
+        throw new Error(`Erreur API OpenAI: ${errorData.error?.message || 'Erreur inconnue'}`);
       }
 
       const data = await response.json();
