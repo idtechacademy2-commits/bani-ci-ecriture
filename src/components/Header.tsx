@@ -44,7 +44,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/6a054abb-f103-4c61-b699-52370a13b51b.png" 
               alt="Logo BANI Ingénieur-Conseil" 
-              className="w-10 h-10 object-contain"
+              className="w-14 h-14 object-contain"
             />
             <div>
               <h1 className="text-2xl font-bold text-primary">BANI</h1>
