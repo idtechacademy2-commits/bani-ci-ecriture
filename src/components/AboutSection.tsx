@@ -10,7 +10,8 @@ const AboutSection = () => {
             À propos de BANI
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Plus de 13 ans d'expertise au service de l'ingénierie et de l'environnement en Côte d'Ivoire
+            Bureau d'étude ivoirien privé créé le 9 février 2010, dirigé par M. Jean-Jacques Dewellet KOUAKOU, 
+            Ingénieur du Génie Rural diplômé de l'EIER. Agréé CHA.N.I.E, ANDE, Ministère de la Construction et inscrit à la CCI.
           </p>
         </div>
 
