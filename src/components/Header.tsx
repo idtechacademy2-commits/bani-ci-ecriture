@@ -41,9 +41,11 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">B</span>
-            </div>
+            <img 
+              src="/lovable-uploads/6a054abb-f103-4c61-b699-52370a13b51b.png" 
+              alt="Logo BANI Ingénieur-Conseil" 
+              className="w-10 h-10 object-contain"
+            />
             <div>
               <h1 className="text-2xl font-bold text-primary">BANI</h1>
               <p className="text-xs text-muted-foreground">Bureau d'Études</p>
