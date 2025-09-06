@@ -16,74 +16,119 @@ import environmentalImage from '@/assets/environmental-studies.jpg';
 const ServicesSection = () => {
   const services = [
     {
-      icon: <Hammer className="text-primary" size={32} />,
-      title: "Études techniques en génie civil et rural",
-      description: "Conception et dimensionnement d'infrastructures, études de faisabilité, supervision de travaux et expertise technique pour vos projets d'aménagement.",
+      icon: <Construction className="text-primary" size={32} />,
+      title: "Bâtiments",
+      description: "Conception, dimensionnement et suivi de projets de bâtiments avec expertise technique complète.",
       features: [
-        "Études de faisabilité technique",
-        "Conception d'infrastructures",
-        "Dimensionnement d'ouvrages",
-        "Supervision de travaux",
-        "Contrôle qualité"
+        "Conception d'ouvrages d'art (pont, dalot, passerelles)",
+        "Conception de bâtiments",
+        "Études de réhabilitation de bâtiments",
+        "Dimensionnement de structures",
+        "Suivi et Contrôle des travaux de bâtiment"
+      ],
+      image: civilEngineeringImage,
+      color: "primary"
+    },
+    {
+      icon: <Hammer className="text-secondary" size={32} />,
+      title: "Assainissement – Épuration des eaux",
+      description: "Solutions complètes pour la gestion des eaux usées et pluviales avec des systèmes d'épuration adaptés.",
+      features: [
+        "Collecte et rejet des eaux pluviales",
+        "Collecte et rejet des eaux usées",
+        "Gestion des déchets solides",
+        "Réseaux et ouvrages d'assainissement",
+        "Épuration des eaux vannes par lagunage",
+        "Récupération des terres inondées",
+        "Assainissement individuel/collectif"
+      ],
+      image: environmentalImage,
+      color: "secondary"
+    },
+    {
+      icon: <ClipboardCheck className="text-primary" size={32} />,
+      title: "Infrastructures Routières",
+      description: "Études et réalisation d'infrastructures routières avec expertise en voirie et réseaux divers.",
+      features: [
+        "Voirie et Réseaux Divers (VRD)",
+        "Étude et Conception de chaussées neuves",
+        "Études et Réhabilitation des routes en terre et de pistes",
+        "Suivi et Contrôle des travaux de voiries",
+        "Topographiques"
       ],
       image: civilEngineeringImage,
       color: "primary"
     },
     {
       icon: <Leaf className="text-secondary" size={32} />,
-      title: "Évaluations environnementales stratégiques",
-      description: "Évaluation des impacts environnementaux des politiques, plans et programmes pour un développement durable et responsable.",
+      title: "Alimentation en Eau Potable",
+      description: "Solutions d'approvisionnement en eau potable pour les zones urbaines et rurales.",
       features: [
-        "Évaluation des politiques publiques",
-        "Analyse des impacts cumulatifs",
-        "Recommandations stratégiques",
-        "Suivi environnemental",
-        "Consultation publique"
+        "Hydraulique urbaine",
+        "Hydraulique villageoise",
+        "Dessablage des eaux de consommation"
       ],
       image: environmentalImage,
       color: "secondary"
     },
     {
-      icon: <Search className="text-primary" size={32} />,
-      title: "Études d'impact environnemental et social",
-      description: "Analyse complète des impacts environnementaux et sociaux de vos projets avec propositions de mesures d'atténuation adaptées.",
+      icon: <TreePine className="text-primary" size={32} />,
+      title: "Développement Rural",
+      description: "Aménagement et développement des zones rurales avec approche intégrée et durable.",
       features: [
-        "Analyse de l'état initial",
-        "Évaluation des impacts",
-        "Mesures d'atténuation",
-        "Plan de gestion environnementale",
-        "Suivi post-projet"
+        "Barrages hydro-agricoles",
+        "Irrigation / hydraulique agricole",
+        "Aménagement de bas-fond et de plaine",
+        "Pisciculture",
+        "Drainage et récupération de sols",
+        "Création de plantation et espaces protégés",
+        "Ouvrages de lutte contre les inondations",
+        "Lutte contre l'érosion des sols"
       ],
       image: environmentalImage,
-      color: "secondary"
+      color: "primary"
     },
     {
-      icon: <FileCheck className="text-primary" size={32} />,
-      title: "Audits environnementaux",
-      description: "Vérification de la conformité environnementale de vos installations et activités selon les normes en vigueur.",
+      icon: <Search className="text-secondary" size={32} />,
+      title: "Environnements et Société",
+      description: "Études d'impact environnemental et social avec plans de gestion adaptés.",
       features: [
-        "Audit de conformité réglementaire",
-        "Évaluation des performances",
-        "Identification des non-conformités",
-        "Plan d'action corrective",
-        "Certification environnementale"
+        "Étude Impact environnemental et social",
+        "Constat d'impact environnemental et social",
+        "Élaboration d'un plan de gestion environnemental et social",
+        "Élaboration d'un plan d'action et réinstallation"
       ],
       image: environmentalImage,
       color: "secondary"
     },
     {
       icon: <Users className="text-primary" size={32} />,
-      title: "Conseil et expertise",
-      description: "Accompagnement personnalisé et conseil d'expert pour optimiser vos projets et assurer leur réussite.",
+      title: "Assistances aux Maîtres d'Ouvrage",
+      description: "Accompagnement technique et conseil pour la maîtrise d'ouvrage et maîtrise d'œuvre.",
       features: [
-        "Conseil stratégique",
-        "Assistance technique",
-        "Formation spécialisée",
-        "Expertise judiciaire",
-        "Support réglementaire"
+        "Maîtrise d'œuvre et Maîtrise d'ouvrage déléguée",
+        "Direction de projets",
+        "Études stratégiques",
+        "Appui aux Collectivités Locales"
       ],
       image: civilEngineeringImage,
       color: "primary"
+    },
+    {
+      icon: <FileCheck className="text-secondary" size={32} />,
+      title: "Assistances Techniques et Formation",
+      description: "Formation et assistance technique dans divers domaines agricoles et ruraux.",
+      features: [
+        "Formation des collectivités rurales à la lutte anti érosive",
+        "Formation des collectivités à la Défense",
+        "Formation pratique au machinisme agricole",
+        "Formation pratique au pilotage de l'irrigation",
+        "Formation pratique au métier de l'agriculteur",
+        "Formation pratique aux techniques culturales",
+        "Formation aux techniques d'aménagement des terres et restauration des sols"
+      ],
+      image: environmentalImage,
+      color: "secondary"
     }
   ];
 
