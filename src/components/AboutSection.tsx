@@ -106,6 +106,36 @@ const AboutSection = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              <Card className="bg-accent border-primary/20">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-3">
+                    <Building2 className="text-primary" size={24} />
+                    <div>
+                      <h4 className="font-semibold text-primary">Ministère de la Construction</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Agrément du Ministère de la Construction, du Logement, 
+                        de l'Assainissement et de l'Urbanisme
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-secondary/5 border-secondary/20">
+                <CardContent className="p-6">
+                  <div className="flex items-center space-x-3">
+                    <CheckCircle2 className="text-secondary" size={24} />
+                    <div>
+                      <h4 className="font-semibold text-primary">CCI Côte d'Ivoire</h4>
+                      <p className="text-sm text-muted-foreground">
+                        Inscrit à la Chambre de Commerce et d'Industrie 
+                        de Côte d'Ivoire
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
