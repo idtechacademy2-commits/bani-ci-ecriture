@@ -1,18 +1,32 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Calendar, GraduationCap, Shield, Award, CheckCircle2, Building2 } from 'lucide-react';
-
 const AboutSection = () => {
-  return (
-    <section id="apropos" className="py-20 bg-gradient-section">
+  return <section id="apropos" className="py-20 bg-gradient-section">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             À propos de BANI
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Bureau d'étude ivoirien privé créé le 9 février 2010, dirigé par M. Jean-Jacques Dewellet KOUAKOU, 
-            Ingénieur du Génie Rural diplômé de l'EIER. Agréé CHA.N.I.E, ANDE, Ministère de la Construction et inscrit à la CCI.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto"> BANI Ingénieur-Conseil est un bureau d’étude ivoirien 
+de type privé qui a été créé le 9 février 2010. Il est 
+dirigé par M. Jean-Jacques Dewellet KOUAKOU, Ingé
+nieur du Génie Rural, diplômé de la prestigieuse Ecole 
+Inter Etats d’Ingénieurs de l’Equipement Rural (EIER) 
+de Ouagadougou au Burkina Faso.
+ BANI est agrée par la Chambre Nationale des 
+Ingénieurs Conseils et Expertsn de Génie Civil 
+(CHA.N.I.E) depuis le mois de Mai 2014
+ Par ailleurs, BANI dispose de l’agrément de l’Agence 
+Nationale De l’Environnement (ANDE) lui permettant 
+de mener des études d’évaluation environnementale 
+stratégique, des études d’impact environnemental et 
+social et des audits environnementaux.
+ De plus, elle dispose d’un agrément du Ministère de la 
+Construction du Logement, de l’Assainissement et de 
+l’Urbanisme.
+ Et en fin, BANI est inscrit à la chambre du commerce 
+et de l’industrie de Côte d’Ivoire
+        </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -154,8 +168,6 @@ const AboutSection = () => {
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
